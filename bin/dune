@@ -1,0 +1,4 @@
+(executable
+ (public_name ocaml_symbolic_cuda_perf)
+ (name main)
+ (libraries ocaml_symbolic_cuda_perf))
