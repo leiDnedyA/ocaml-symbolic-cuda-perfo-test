@@ -1,2 +1,3 @@
 (library
- (name ocaml_symbolic_cuda_perf))
+ (name overlap_count)
+ (libraries z3))
