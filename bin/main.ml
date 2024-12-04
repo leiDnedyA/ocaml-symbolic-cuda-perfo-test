@@ -60,7 +60,7 @@ let test_inputs () =
 
   (* Run tests *)
   List.iter (function {name; expressions; expected_count} ->
-    let (count, constraints) = Overlap_count.count_symbolic_accesses ctx expressions in
+    let (count, constraints, _) = Overlap_count.count_symbolic_accesses ctx expressions in
     Printf.printf "\nTest %s:\n" name;
     Printf.printf "Unique overlapping expressions: %d\n" count;
     Printf.printf "Expected count: %d\n" expected_count;
